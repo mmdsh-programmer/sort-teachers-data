@@ -1,0 +1,48 @@
+@font-face{
+    font-family: "Iransans";
+    src: url(../fonts/IRANSansWeb.ttf);
+}
+body{
+    font-family: "Iransans";
+    direction: rtl;
+}
+
+td{
+    vertical-align: middle;
+}
+
+.select select{
+    font-family: "Iransans";
+}
+
+.control{
+    position: relative;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon{
+    display: absolute;
+    right : 3px;
+}
+
+.box .level{
+    justify-content: start;
+}
+
+.buttons{
+    justify-content: center;
+}
+
+.footer{
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width : 768px){
+    .modified{
+        margin-bottom: 20px;
+    }
+
+    .footer .column{
+        justify-content: center;
+        display: flex;
+    }
+}

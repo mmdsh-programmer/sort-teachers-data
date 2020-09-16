@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>جدول برنامه هفتگی</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title has-text-centered is-size-4-mobile">جدول برنامه هفتگی شما</h2>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="box">
+                <div class="level">
+                    <div class="level-right">
+                        <div class="level-item">
+                            <h3 class="ml-3 modified">مرتب سازي بر اساس :</h3>
+                        </div>
+                    </div>
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="control has-icons-right">
+                                <div class="select is-fullwidth">
+                                    <select id="filter" onchange="onChangeItem();">
+                                        <option selected value="time">زمان برگزاري</option>
+                                        <option value="student">تعداد دانشجويان</option>
+                                        <option value="code">کد درس</option>
+                                        <option value="prof">نام استاد</option>
+                                        <option value="course">نام درس</option>
+
+                                    </select>
+                                </div>
+                                <span class="icon">
+                                    <i class="fa fa-filter"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box table-container">
+                <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered" id="schedule">
+                    <thead>
+                        <tr>
+                            <th>کد درس</th>
+                            <th>نام درس</th>
+                            <th>استاد</th>
+                            <th>زمان برگزاری</th>
+                            <th>تعداد دانشجویان</th>
+                        </tr>
+                    </thead>
+                    <tfoot></tfoot>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer container">
+        <div class="container">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item"><a class="title is-4" href="#">محمد شاكري</a></div>
+                </div>
+                <div class="level-right"><a class="level-item" href="#">امكانات</a><a class="level-item" href="#">نسخه
+                        پولي</a><a class="level-item" href="#">پشتيباني</a><a class="level-item" href="#">تماس با ما</a>
+                </div>
+            </div>
+            <hr>
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <div class="buttons"><a class="button" href="#"><i class="fa fa-telegram"></i></a><a class="button"
+                        href="#"><i class="fa fa-instagram"></i></a><a class="button" href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered mt-3">
+                <p class="subtitle is-6 has-text-centered">&copy; تمام حقوق اين قالب محفوظ است</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
